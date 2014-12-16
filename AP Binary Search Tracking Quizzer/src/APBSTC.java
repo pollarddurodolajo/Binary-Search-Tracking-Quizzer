@@ -41,11 +41,11 @@ public class APBSTC
 			while (left <= right)
 				{
 				int middle = (left + right) / 2;
-				if (target < listOfNums.get(middle))
+				if (target < ((int)listOfNums.get(middle)))
 				{
 				right = middle - 1;
 				}
-				else if (target > elements[middle])
+				else if (target > ((int)listOfNums.get(middle)))
 					{
 					left = middle + 1;
 					}
