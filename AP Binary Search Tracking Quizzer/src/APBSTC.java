@@ -34,7 +34,7 @@ public class APBSTC
 
 		Collections.sort(listOfNums);
 		
-			int target = (int)(Math.random())
+			int target = (int)(Math.random() * listOfNums.size()) + 1;
 			int left = 0;
 			int right = listOfNums.size() - 1;
 			
