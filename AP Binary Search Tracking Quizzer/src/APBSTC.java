@@ -38,8 +38,7 @@ public class APBSTC
 		
 		
 		int indexOfTarget = (int)(Math.random() * listOfNums.size());	
-		//int target = (int)(listOfNums.get(indexOfTarget));
-		int target = 7;
+		int target = (int)(listOfNums.get(indexOfTarget - 1));
 		System.out.println("The target number is " + target + ".");
 		int counter = 0;
 		
@@ -125,6 +124,8 @@ public class APBSTC
 						}
 					else
 						{
+						System.out.println("Congratulations you completed the quiz!");
+						System.out.println("Try count: " + counter);
 						return middle;
 						}
 					}
